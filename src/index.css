@@ -1,0 +1,317 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background-Clr: #effbf8;
+  --background-Clr1: #f3f9ff;
+  --primary-Clr1: #130f49;
+  --hover-Clr: #a5a6ff;
+}
+
+body {
+  font-family: "Mooli", sans-serif;
+  background: #ffffff;
+  line-height: 1.4;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 4%;
+  background: #ffffff;
+  box-shadow: 4px 4px 4px 4px lightgray;
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--hover-Clr);
+    border-radius: 50px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .nav_links {
+    flex: 1;
+    text-align: end;
+
+    ul li {
+      display: inline-block;
+      padding: 0px 25px;
+      font-size: 1rem;
+      text-transform: capitalize;
+      transition: 0.4s ease-in;
+
+      a {
+        text-decoration: none;
+        color: gray;
+      }
+    }
+  }
+
+  .nav_links ul li::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: var(--hover-Clr);
+    display: block;
+    transition: 0.4s ease-in;
+  }
+
+  .nav_links ul li:hover::after {
+    width: 100%;
+  }
+}
+
+/*************************************
+The below styles are for the Hero Component  
+************************************/
+
+.hero_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  gap: 30px;
+
+  .hero {
+    width: 50%;
+    height: 75vh;
+    background: transparent;
+    margin-top: 2%;
+
+    .hero-title {
+      font-size: 2.3rem;
+      color: var(--primary-Clr1);
+      padding: 3% 0px 2% 0px;
+    }
+
+    .hero-description {
+      font-size: 1.2rem;
+      opacity: 0.5;
+      padding-bottom: 4%;
+    }
+  }
+
+  .contact-me-content {
+    width: 40%;
+    height: 8vh;
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+
+    .contact-me-icon {
+      width: 15%;
+      height: 5vh;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .contact-me-url {
+      width: 80%;
+      height: 8vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-me-url a {
+      text-decoration: none;
+      font-size: 1rem;
+      color: var(--primary-Clr1);
+    }
+  }
+
+  .image-content {
+    width: 30%;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    background: url(src/assets/oplano.jpeg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.name {
+  color: var(--hover-Clr);
+  display: inline-block;
+  animation: shiftUp 1s infinite;
+}
+
+@keyframes shiftUp {
+  0% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(-3px);
+  }
+  60% {
+    transform: translateY(-6px);
+  }
+  80% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(6px);
+  }
+}
+
+/*************************************
+The below styles are for the Hero Component  
+************************************/
+
+#about_wripper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 3%;
+  padding: 3% 0px;
+
+  .about-content-main {
+    margin: 17% 0px 0px 5%;
+
+    .about-content-title,
+    .position {
+      font-size: 1rem;
+      text-transform: uppercase;
+      opacity: 0.6;
+      padding-bottom: 3%;
+    }
+
+    .position {
+      padding-bottom: 7%;
+    }
+
+    .developer-name {
+      font-size: 1.7rem;
+      color: var(--primary-Clr1);
+      padding-bottom: 3%;
+    }
+  }
+}
+
+.about-content {
+  width: 30%;
+  height: 50vh;
+}
+
+.about-content-one {
+  width: 60%;
+
+  .about-content-main-two {
+    margin: 8% 0px 0px 0px;
+
+    .about-description {
+      font-size: 1.1rem;
+      opacity: 0.6;
+      padding-bottom: 3%;
+    }
+
+    .personalities,
+    .personalities-main {
+      font-size: 1rem;
+      text-decoration: underline;
+      padding-right: 8px;
+      padding-bottom: 1%;
+      display: inline-block;
+      opacity: 0.6;
+    }
+
+    .personalities-main {
+      text-decoration: none;
+      color: var(--primary-Clr1);
+      opacity: 0.9;
+      font-weight: 800;
+      cursor: pointer;
+    }
+  }
+
+  .p-two {
+    padding: 0px 15% 0px 5%;
+  }
+
+  .p-three {
+    padding-left: 15%;
+  }
+
+  .p-four {
+    padding-left: 35%;
+  }
+
+  .p-main-four {
+    padding-left: 3%;
+  }
+
+  .p-five {
+    padding-left: 6.5%;
+  }
+}
+
+/*************************************
+The below styles are for the WorkViews Component  
+************************************/
+
+.views_wripper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 8%;
+
+  .views-content {
+    width: 26%;
+    height: 30vh;
+    background: gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+
+    .number {
+      font-size: 2rem;
+      color: var(--primary-Clr1);
+      padding-bottom: 1%;
+    }
+
+    .number-description {
+      font-size: 1rem;
+      text-transform: uppercase;
+      opacity: 0.6;
+    }
+  }
+
+  .views-content:hover {
+    transform: translateY(-20px);
+  }
+
+  .views-content-one {
+    background: #d3f4ec;
+  }
+
+  .views-content-two {
+    background: #fce8d4;
+  }
+
+  .views-content-three {
+    background: #e3f9e0;
+  }
+}
