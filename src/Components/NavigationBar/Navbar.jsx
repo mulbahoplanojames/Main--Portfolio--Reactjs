@@ -1,12 +1,13 @@
 import React from "react";
 import "/src/Components/NavigationBar/Navbar.css";
+import oplanoimg from "/src/assets/oplano.jpeg.jpg";
 
 const Navbar = () => {
   return (
     <>
       <nav>
         <div className="logo">
-          <img src="" alt="" />
+          <img src={oplanoimg} alt="My photo" className="img" />
         </div>
 
         <div className="nav_links">
