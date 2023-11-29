@@ -1,0 +1,43 @@
+.recent_work_card_wripper {
+  width: 350px;
+  background: #ffffff;
+}
+
+.work_image {
+  height: 35vh;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.work_image:hover {
+  .project_img {
+    transform: scale(1.1);
+  }
+}
+
+.work_description_wripper {
+  height: 12vh;
+  padding: 3% 4%;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.description_wripper {
+  width: 220px;
+}
+
+.peoject_title {
+  font-size: 1.3rem;
+}
+
+.web_title {
+  color: #0a2640;
+}
+
+.plus_icon {
+  font-size: 2.5rem;
+  color: #0a2640;
+  cursor: pointer;
+}

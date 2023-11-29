@@ -2,13 +2,14 @@ import React from "react";
 import "/src/Components/About/About.css";
 import Button from "../ButtonsM/Button";
 import ViewCard from "./ViewCard";
+import "animate.css";
 
 const About = () => {
   return (
     <>
       <div id="about">
         <div className="about_wripper">
-          <div className="about_content about_content_one">
+          <div className="about_content about_content_one  animate__animated animate__lightSpeedInRight">
             <p className="key_title">- NICE TO MEET YOU</p>
             <h2 className="name">Oplano James Mulbah</h2>
             <p className="position">
@@ -16,8 +17,8 @@ const About = () => {
             </p>
             <Button />
           </div>
-          <div className="about_content about_content_two">
-            <p className="details details_one">
+          <div className="about_content about_content_two animate__animated animate__lightSpeedInLeft">
+            <p className="details details_one ">
               Hello there! My name is Oplano James Mulbah. I am a web developer
               & Software Engineer, and I'm very passionate and dedicated to my
               work.

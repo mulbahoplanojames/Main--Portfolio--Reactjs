@@ -87,3 +87,28 @@
     transform: translateY(6px);
   }
 }
+
+@media screen and (max-width: 767px) {
+  #hero {
+    padding-top: 30%;
+  }
+  .hero_wripper {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+  }
+  .hero_content_two {
+    width: 330px;
+    height: 45vh;
+  }
+  .hero_content_one {
+    width: 390px;
+    /* padding-left: 28%; */
+  }
+  .title {
+    font-size: 1.8rem;
+    padding-bottom: 8%;
+  }
+  .btns {
+    margin: 3% 0px 4% 0px;
+  }
+}

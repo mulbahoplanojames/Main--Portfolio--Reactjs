@@ -57,3 +57,9 @@
 .details_one {
   padding-bottom: 3%;
 }
+
+@media screen and (max-width: 767px) {
+  #about {
+    padding: 6% 4%;
+  }
+}
