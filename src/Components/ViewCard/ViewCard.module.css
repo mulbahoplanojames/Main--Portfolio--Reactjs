@@ -5,14 +5,7 @@
   --text_Clr: #fff;
 }
 
-.view_card_wripper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 50px;
-  margin-top: 6%;
-}
+
 
 .view_card {
   width: 320px;

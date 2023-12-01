@@ -4,15 +4,12 @@
 }
 
 .contact_info_wripper {
-  background: #ffffff;
-}
-
-.contact_info_wripper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 30px;
   padding: 4% 3%;
+  background: #ffffff;
 }
 
 .form {
@@ -137,4 +134,10 @@
 .social_icon {
   font-size: 1.5rem;
   color: #0a2640;
+}
+
+@media screen and (max-width: 767px) {
+  .form_title {
+    padding-bottom: 14%;
+  }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "/src/Components/Hero/Hero.css";
+import Styles from "/src/Components/Hero/Hero.module.css";
 import Button from "../ButtonsM/Button";
 import Button2 from "../ButtonsM/Button2";
 import oplanoimg from "/src/assets/oplano.jpeg.jpg";
@@ -9,29 +9,30 @@ import "animate.css";
 const Hero = () => {
   return (
     <>
-      <div id="hero">
-        <div className="hero_wripper">
-          <div className="hero_content hero_content_one animate__animated animate__fadeInDownBig">
-            <h1 className="title">
-              Hi, I'm <span className="aminate">Oplano!</span>
+      <div id={Styles.hero}>
+        <div className={Styles.hero_wripper}>
+          <div className={`${Styles.hero_content} ${Styles.hero_content_one}`}>
+            <h1 className={Styles.title}>
+              Hi, I'm <span className={Styles.aminate}>Oplano!</span>
               <br /> Creative Web Developer Base in Rwanda.
             </h1>
-            <p className="description">
-              I'm a Rwanda based front‑end developer with{" "}
-              <span className="aminate">6+ months</span> of experience.
+            <p className={Styles.description}>
+              I'm a Rwanda based front‑end developer with
+              <span className={Styles.aminate}>6+ months</span> of experience.
             </p>
-            <div className="btns">
+            <div className={Styles.btns}>
               <Button />
               <Button2 />
             </div>
-            <p className="contact">
-              <MdMailOutline className="icon" /> mulbahjamesoplano@gmail.com
+            <p className={Styles.contact}>
+              <MdMailOutline className={Styles.icon} />{" "}
+              mulbahjamesoplano@gmail.com
             </p>
-            <p className="contact">
-              <MdOutlinePhoneInTalk className="icon" /> +250791676207
+            <p className={Styles.contact}>
+              <MdOutlinePhoneInTalk className={Styles.icon} /> +250791676207
             </p>
           </div>
-          <div className="hero_content hero_content_two animate__animated animate__fadeInUpBig">
+          <div className={`${Styles.hero_content} ${Styles.hero_content_two}`}>
             <img src={oplanoimg} alt="" className="img" />
           </div>
         </div>

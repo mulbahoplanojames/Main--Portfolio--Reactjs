@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "/src/Components/ContactInfo/ContactInfo.css";
+import Styles from "/src/Components/ContactInfo/ContactInfo.module.css";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlinePhoneIphone } from "react-icons/md";
 import { CiMail } from "react-icons/ci";
@@ -33,15 +33,15 @@ const Contactinfo = () => {
 
   return (
     <>
-      <section id="contact_info">
-        <div className="contact_info_wripper">
-          <form className="form">
-            <h1 className="form_title">Send Message</h1>
+      <section id={Styles.contact_info}>
+        <div className={Styles.contact_info_wripper}>
+          <form className={Styles.form}>
+            <h1 className={Styles.form_title}>Send Message</h1>
 
             <div>
               <input
                 type="text"
-                className="input"
+                className={Styles.input}
                 placeholder="Your Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -51,7 +51,7 @@ const Contactinfo = () => {
             <div>
               <input
                 type="email"
-                className="input"
+                className={Styles.input}
                 placeholder="Your Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -61,7 +61,7 @@ const Contactinfo = () => {
             <div>
               <input
                 type="text"
-                className="input"
+                className={Styles.input}
                 placeholder="Subject"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
@@ -70,7 +70,7 @@ const Contactinfo = () => {
             </div>
             <div>
               <textarea
-                id="comments"
+                id={Styles.comments}
                 placeholder="Message"
                 value={comments}
                 onChange={(e) => setComments(e.target.value)}
@@ -80,7 +80,7 @@ const Contactinfo = () => {
             <div>
               <input
                 type="submit"
-                id="submit"
+                id={Styles.submit}
                 value={"Send Message"}
                 onClick={(e) => {
                   e.preventDefault();
@@ -93,9 +93,9 @@ const Contactinfo = () => {
             </div>
           </form>
 
-          <div className="get_in_touch">
-            <h1 className="form_title">Get in Touch</h1>
-            <p className="personal_info_description">
+          <div className={Styles.get_in_touch}>
+            <h1 className={Styles.form_title}>Get in Touch</h1>
+            <p className={Styles.personal_info_description}>
               Hello there! My name is Oplano James Mulbah. I am a web developer
               & Software Engineer, and I'm very passionate and dedicated to my
               work. With +6 months experience as a professional a wed developer,
@@ -104,41 +104,43 @@ const Contactinfo = () => {
             </p>
 
             <div>
-              <p className="persoal_conatct_details">
-                <CiLocationOn className="icon_two" />
-                <span className="detail_span">
+              <p className={Styles.persoal_conatct_details}>
+                <CiLocationOn className={Styles.icon_two} />
+                <span className={Styles.detail_span}>
                   KG 276 Gizosi Kigali, Rwanda
                 </span>
               </p>
-              <p className="persoal_conatct_details">
-                <MdOutlinePhoneIphone className="icon_two" />
-                <span className="detail_span">(+250) 791676207</span>
+              <p className={Styles.persoal_conatct_details}>
+                <MdOutlinePhoneIphone className={Styles.icon_two} />
+                <span className={Styles.detail_span}>(+250) 791676207</span>
               </p>
-              <p className="persoal_conatct_details">
-                <CiMail className="icon_two" />
-                <span className="detail_span">mulbahjamesoplano@gmail.com</span>
+              <p className={Styles.persoal_conatct_details}>
+                <CiMail className={Styles.icon_two} />
+                <span className={Styles.detail_span}>
+                  mulbahjamesoplano@gmail.com
+                </span>
               </p>
             </div>
 
-            <div className="social_links_icon_wripper">
+            <div className={Styles.social_links_icon_wripper}>
               <a href="https://github.com/mulbahoplanojames" target="_blank">
-                <div className="social_links_icons">
-                  <FaGithub className="social_icon" />
+                <div className={Styles.social_links_icons}>
+                  <FaGithub className={Styles.social_icon} />
                 </div>
               </a>
               <a href="/">
-                <div className="social_links_icons">
-                  <FaXTwitter className="social_icon" />
+                <div className={Styles.social_links_icons}>
+                  <FaXTwitter className={Styles.social_icon} />
                 </div>
               </a>
               <a href="/">
-                <div className="social_links_icons">
-                  <SiUpwork className="social_icon" />
+                <div className={Styles.social_links_icons}>
+                  <SiUpwork className={Styles.social_icon} />
                 </div>
               </a>
               <a href="/">
-                <div className="social_links_icons">
-                  <FaWhatsapp className="social_icon" />
+                <div className={Styles.social_links_icons}>
+                  <FaWhatsapp className={Styles.social_icon} />
                 </div>
               </a>
             </div>

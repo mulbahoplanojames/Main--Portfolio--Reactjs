@@ -1,29 +1,33 @@
 import React from "react";
-import "/src/Components/About/About.css";
+import Styles from "/src/Components/About/About.module.css";
 import Button from "../ButtonsM/Button";
-import ViewCard from "./ViewCard";
+import ViewCard from "../ViewCard/ViewCard";
 import "animate.css";
 
 const About = () => {
   return (
     <>
-      <div id="about">
-        <div className="about_wripper">
-          <div className="about_content about_content_one  animate__animated animate__lightSpeedInRight">
-            <p className="key_title">- NICE TO MEET YOU</p>
-            <h2 className="name">Oplano James Mulbah</h2>
-            <p className="position">
-              Web <span className="aminate">Developer</span>
+      <div id={Styles.about}>
+        <div className={Styles.about_wripper}>
+          <div
+            className={`${Styles.about_content} ${Styles.about_content_one}`}
+          >
+            <p className={Styles.key_title}>- NICE TO MEET YOU</p>
+            <h2 className={Styles.name}>Oplano James Mulbah</h2>
+            <p className={Styles.position}>
+              Web <span className={Styles.aminate}>Developer</span>
             </p>
             <Button />
           </div>
-          <div className="about_content about_content_two animate__animated animate__lightSpeedInLeft">
-            <p className="details details_one ">
+          <div
+            className={`${Styles.about_content} ${Styles.about_content_two}`}
+          >
+            <p className={`${Styles.details} ${Styles.details_one}`}>
               Hello there! My name is Oplano James Mulbah. I am a web developer
               & Software Engineer, and I'm very passionate and dedicated to my
               work.
             </p>
-            <p className="details">
+            <p className={Styles.details}>
               With +6 months experience as a professional a wed developer, I
               have acquired the skills and knowledge necessary to make your
               project a success. I enjoy every step of the design process, from
@@ -32,7 +36,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="view_card_wripper">
+        <div className={Styles.view_card_wripper}>
           <ViewCard
             number={"6"}
             description={"MONTHS OF EXPERIENCE"}
