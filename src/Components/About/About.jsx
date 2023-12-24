@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "/src/Components/About/About.module.css";
-import Button from "../ButtonsM/Button";
+import Button from "../../UI/ButtonsM/Button";
 import ViewCard from "../ViewCard/ViewCard";
 import "animate.css";
 

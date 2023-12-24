@@ -3,70 +3,57 @@ import Styles from "/src/Components/NavigationBar/Navbar.module.css";
 import oplanoimg from "/src/assets/oplano.jpeg.jpg";
 import { MdOutlineMenu, MdOutlineCancelPresentation } from "react-icons/md";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  // const [navLinksStyle, setNavLinksStyle] = useState({ top: "90px" });
-  // const [navLinksStyle2, setNavLinksStyle2] = useState({ top: "-400px" });
+  const [isMenuVisible, setMenuVisibility] = useState(false);
 
-  // const handleHideMenu = () => {
-  //   setNavLinksStyle({ top: "-400px" });
-  // };
+  const hideMenu = () => {
+    setMenuVisibility(false);
+  };
 
-  // useEffect(() => {
-  //   const hideMenu = document.querySelector(".hideMenu");
-  //   hideMenu.addEventListener("click", handleHideMenu);
+  const showMenu = () => {
+    setMenuVisibility(true);
+    console.log("Click");
+  };
 
-  //   return () => {
-  //     hideMenu.removeEventListener("click", handleHideMenu);
-  //   };
-  // }, []);
+  const navLinkStyle = {
+    top: isMenuVisible ? "80px" : "-320px",
+  };
 
-  // const handleShowMenu = () => {
-  //   setNavLinksStyle2({ top: "90px" });
-  // };
-
-  // useEffect(() => {
-  //   const showMenu = document.querySelector(".showMenu");
-  //   showMenu.addEventListener("click", handleShowMenu);
-
-  //   return () => {
-  //     showMenu.removeEventListener("click", handleShowMenu);
-  //   };
-  // }, []);
   return (
     <>
       <nav>
-        <div className={Styles.logo}>
-          <img src={oplanoimg} alt="My photo" className={Styles.img} />
-        </div>
+        <Link to="/hero">
+          <div className={Styles.logo}>
+            <img src={oplanoimg} alt="My photo" className={Styles.img} />
+          </div>
+        </Link>
 
-        <div
-          className={Styles.nav_links}
-          // style={(navLinksStyle, navLinksStyle2)}
-        >
-          <MdOutlineCancelPresentation
-            className={Styles.hideMenu}
-            // onClick={handleHideMenu}
-          />
+        <MdOutlineMenu className={Styles.showMenu} onClick={showMenu} />
+        <div className={Styles.nav_links} style={navLinkStyle}>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/hero">Home</Link>
             </li>
             <li>
-              <a href="#about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <Link to="/services">Services</Link>
             </li>
             <li>
-              <a href="#works">Work</a>
+              <Link to="/work">Work</Link>
             </li>
             <li>
-              <a href="/">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
+          <MdOutlineCancelPresentation
+            className={Styles.hideMenu}
+            onClick={hideMenu}
+          />
         </div>
-        <MdOutlineMenu className={Styles.showMenu} />
       </nav>
     </>
   );

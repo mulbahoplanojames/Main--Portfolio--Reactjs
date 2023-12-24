@@ -1,5 +1,5 @@
 #contact_info {
-  padding: 5% 5%;
+  padding: 8% 5% 5% 5%;
   background: #0a2640;
 }
 
@@ -137,6 +137,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  #contact_info {
+    padding-top: 20%;
+  }
   .form_title {
     padding-bottom: 14%;
   }

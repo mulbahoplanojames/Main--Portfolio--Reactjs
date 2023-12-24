@@ -15,7 +15,7 @@ const Work = () => {
       <section id={Styles.works}>
         <h1 className={Styles.work_title}>Portfolio</h1>
         <p className={Styles.description}>
-          Thses are some of my recent projects.
+          These are some of my recent projects.
         </p>
         <div className={Styles.recent_works_wripper}>
           <RecentWorkCard

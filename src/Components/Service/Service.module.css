@@ -1,12 +1,5 @@
-:root {
-  --primary_Clr: #0a2640;
-  --secondary_Clr: #65e4a3;
-  --btn_Clr: #1c3d5b;
-  --text_Clr: #ffffff;
-}
-
 #services {
-  padding: 5% 5%;
+  padding: 10% 5% 5% 5%;
 }
 
 .service_main_title {
@@ -19,6 +12,9 @@
 
 .description {
   padding: 0px 20% 5% 0px;
+  line-height: 1.4rem;
+  font-size: 1.1rem;
+  opacity: 0.7;
 }
 
 .services_wripper {
@@ -29,10 +25,9 @@
   gap: 40px;
 }
 
-
 @media screen and (max-width: 767px) {
   #services {
-    padding-top: 20%;
+    padding-top: 25%;
   }
   .service_main_title {
     font-size: 2rem;

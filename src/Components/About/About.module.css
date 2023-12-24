@@ -5,7 +5,7 @@
 }
 
 #about {
-  padding: 2% 4% 5% 4%;
+  padding: 8% 4% 5% 4%;
 }
 
 .about_wripper {
@@ -93,6 +93,6 @@
 
 @media screen and (max-width: 767px) {
   #about {
-    padding: 6% 4%;
+    padding: 18% 4% 6% 4%;
   }
 }

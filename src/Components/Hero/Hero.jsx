@@ -1,7 +1,7 @@
 import React from "react";
 import Styles from "/src/Components/Hero/Hero.module.css";
-import Button from "../ButtonsM/Button";
-import Button2 from "../ButtonsM/Button2";
+import Button from "../../UI/ButtonsM/Button";
+import Button2 from "../../UI/ButtonsM/Button2";
 import oplanoimg from "/src/assets/oplano.jpeg.jpg";
 import { MdMailOutline, MdOutlinePhoneInTalk } from "react-icons/md";
 import "animate.css";

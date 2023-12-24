@@ -11,9 +11,11 @@ const Service = () => {
       <section id={Styles.services}>
         <h1 className={Styles.service_main_title}>Services</h1>
         <p className={Styles.description}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil sunt
-          placeat ducimus perspiciatis, facere nobis facilis similique
-          cupiditate accusamus consequatur?
+          I'm a passionate Front-end Software Developer with a focus on web
+          technologies. Proficient in HTML, CSS, and JavaScript, I've honed my
+          skills in creating responsive and visually appealing web applications.
+          My experience includes developing user-friendly interfaces, optimizing
+          web performance, and collaborating with cross-functional teams.
         </p>
 
         <div className={Styles.services_wripper}>

@@ -7,6 +7,7 @@ import { FaGithub, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiUpwork } from "react-icons/si";
 import swal from "sweetalert";
+import { Link } from "react-router-dom";
 
 const Contactinfo = () => {
   const [name, setName] = useState("");
@@ -123,26 +124,29 @@ const Contactinfo = () => {
             </div>
 
             <div className={Styles.social_links_icon_wripper}>
-              <a href="https://github.com/mulbahoplanojames" target="_blank">
+              <Link
+                to="hcontactttps://github.com/mulbahoplanojames"
+                target="_blank"
+              >
                 <div className={Styles.social_links_icons}>
                   <FaGithub className={Styles.social_icon} />
                 </div>
-              </a>
-              <a href="/">
+              </Link>
+              <Link to="/contact">
                 <div className={Styles.social_links_icons}>
                   <FaXTwitter className={Styles.social_icon} />
                 </div>
-              </a>
-              <a href="/">
+              </Link>
+              <Link to="/contact">
                 <div className={Styles.social_links_icons}>
                   <SiUpwork className={Styles.social_icon} />
                 </div>
-              </a>
-              <a href="/">
+              </Link>
+              <Link to="/contact">
                 <div className={Styles.social_links_icons}>
                   <FaWhatsapp className={Styles.social_icon} />
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
