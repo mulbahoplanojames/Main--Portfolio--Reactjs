@@ -14,7 +14,6 @@ const Navbar = () => {
 
   const showMenu = () => {
     setMenuVisibility(true);
-    console.log("Click");
   };
 
   const navLinkStyle = {
@@ -34,7 +33,7 @@ const Navbar = () => {
         <div className={Styles.nav_links} style={navLinkStyle}>
           <ul>
             <li>
-              <Link to="/hero">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/about">About</Link>

@@ -17,7 +17,7 @@
 }
 
 .hero_content {
-  width: 570px;
+  width: 540px;
 }
 
 .hero_content_one {
@@ -101,7 +101,7 @@
     height: 45vh;
   }
   .hero_content_one {
-    width: 390px;
+    width: 330px;
     /* padding-left: 28%; */
   }
   .title {

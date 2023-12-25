@@ -143,4 +143,7 @@
   .form_title {
     padding-bottom: 14%;
   }
+  .personal_info_description {
+    font-size: 1.2rem;
+  }
 }

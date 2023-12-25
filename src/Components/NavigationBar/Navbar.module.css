@@ -60,11 +60,12 @@ nav {
     position: absolute;
     background: var(--primary_Clr);
     top: -320px;
-    right: 35px;
+    right: 5px;
     width: 350px;
     text-align: center;
     padding: 4% 2%;
     border-radius: 20px;
+    transition: 0.5s ease-in-out;
   }
   .nav_links ul li {
     display: block;
