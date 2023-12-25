@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <Link to="/hero">
+        <Link to="/">
           <div className={Styles.logo}>
             <img src={oplanoimg} alt="My photo" className={Styles.img} />
           </div>
