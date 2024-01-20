@@ -4,6 +4,7 @@ import oplanoimg from "/src/assets/oplano.jpeg.jpg";
 import { MdOutlineMenu, MdOutlineCancelPresentation } from "react-icons/md";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import navLinks from "../../Constant/Constant";
 
 const Navbar = () => {
   const [isMenuVisible, setMenuVisibility] = useState(false);
@@ -32,21 +33,13 @@ const Navbar = () => {
         <MdOutlineMenu className={Styles.showMenu} onClick={showMenu} />
         <div className={Styles.nav_links} style={navLinkStyle}>
           <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/services">Services</Link>
-            </li>
-            <li>
-              <Link to="/work">Work</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
+            {navLinks.map((navink) => {
+              return (
+                <li key={navink.label}>
+                  <Link to={navink.href}>{navink.label}</Link>
+                </li>
+              );
+            })}
           </ul>
           <MdOutlineCancelPresentation
             className={Styles.hideMenu}
