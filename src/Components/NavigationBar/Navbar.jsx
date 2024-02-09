@@ -1,8 +1,7 @@
-import React from "react";
+import { useState } from "react";
 import Styles from "/src/Components/NavigationBar/Navbar.module.css";
 import oplanoimg from "/src/assets/oplano.jpeg.jpg";
 import { MdOutlineMenu, MdOutlineCancelPresentation } from "react-icons/md";
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import navLinks from "../../Constant/Constant";
 

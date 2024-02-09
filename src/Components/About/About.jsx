@@ -1,4 +1,3 @@
-import React from "react";
 import Styles from "/src/Components/About/About.module.css";
 import Button from "../../UI/ButtonsM/Button";
 import ViewCard from "../ViewCard/ViewCard";
@@ -24,8 +23,8 @@ const About = () => {
           >
             <p className={`${Styles.details} ${Styles.details_one}`}>
               Hello there! My name is Oplano James Mulbah. I am a web developer
-              & Software Engineer, and I'm very passionate and dedicated to my
-              work.
+              & Software Engineer, and I&apos;m very passionate and dedicated to
+              my work.
             </p>
             <p className={Styles.details}>
               With +6 months experience as a professional a wed developer, I

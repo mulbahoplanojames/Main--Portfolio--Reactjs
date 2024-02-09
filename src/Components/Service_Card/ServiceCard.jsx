@@ -1,4 +1,3 @@
-import React from "react";
 import Styles from "/src/Components/Service_Card/ServiceCard.module.css";
 
 const ServiceCard = (props) => {

@@ -1,4 +1,3 @@
-import React from "react";
 import Styles from "/src/Components/ViewCard/ViewCard.module.css";
 
 const ViewCard = (props) => {
