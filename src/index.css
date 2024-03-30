@@ -1,24 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  line-height: 2rem;
-  position: relative;
-  scroll-behavior: smooth;
-}
-
 :root {
-  --primary_Clr: #0a2640;
-  --secondary_Clr: #65e4a3;
-  --btn_Clr: #1c3d5b;
-  --text_Clr: #fff;
+	font-family: "Roboto", sans-serif;
 }
