@@ -1,8 +1,19 @@
+import { SiUpwork } from "react-icons/si";
+import { FaGithub, FaInstagram } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+
 const Navbar = () => {
 	return (
 		<>
-			<nav>
-				<h1 className='text-red-400'>Oplano M.</h1>
+			<nav className='flex justify-between py-6 lg:px-16 px-4 shadow-lg fixed top-0 w-full bg-white z-20'>
+				<h1 className='text-2xl font-bold text-1'>Oplano M.</h1>
+
+				<div className='flex items-center justify-center gap-5'>
+					<SiUpwork className='text-2xl cursor-pointer hover:text-green-700' />
+					<FaGithub className='text-2xl cursor-pointer' />
+					<FaInstagram className='text-2xl cursor-pointer hover:text-red-700' />
+					<FaSquareXTwitter className='text-2xl cursor-pointer' />
+				</div>
 			</nav>
 		</>
 	);
