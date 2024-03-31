@@ -2,11 +2,12 @@
 import ABOUT_ME from "../../Constant/Constant";
 import HeroButton from "../../Interfaces/Hero Button/HeroButton";
 import { motion } from "framer-motion";
+import Hero_Iamge from "/src/assets/illu.jpg";
 
 const Hero = () => {
 	return (
 		<>
-			<div className='grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-y-9 place-items-center px-2 '>
+			<div className='grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-y-9 place-items-center px-2 '>
 				<div className=' md:w-heroContent1 w-full h-fit '>
 					<motion.h1
 						whileInView={{ opcity: 1, y: 0 }}
@@ -30,8 +31,14 @@ const Hero = () => {
 					whileInView={{ opcity: 1, y: 0 }}
 					initial={{ opcity: 0, y: -200 }}
 					transition={{ duration: 2 }}
-					className='bg-red-600 py-20 md:w-heroContent2_lg w-heroContent2_Sm  h-80 md:h-80 order-first lg:order-last  rounded-full'
-				></motion.div>
+					className='py-20 md:w-heroContent2_lg w-heroContent2_Sm  h-80 md:h-80 order-first md:order-last  rounded-full overflow-hidden '
+				>
+					<img
+						src={Hero_Iamge}
+						alt='My image'
+						className='w-full h-full object-cover'
+					/>
+				</motion.div>
 			</div>
 		</>
 	);
