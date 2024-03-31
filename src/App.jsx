@@ -1,3 +1,5 @@
+// My portfolio
+
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import Technologies from "./Components/Technologies/Technologies";
