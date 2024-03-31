@@ -11,7 +11,7 @@ const Technologies = () => {
 				<div className='flex flex-wrap gap-10 justify-center items-center'>
 					<motion.div
 						whileInView={{ opacity: 1, x: 0 }}
-						initial={{ opacity: 0, x: -80 }}
+						initial={{ opacity: 0, x: -40 }}
 						transition={{ duration: 0.5 }}
 						className='TechIconWripper border-orange-500 hover:shadow-orange-500'
 					>
@@ -56,7 +56,7 @@ const Technologies = () => {
 					</motion.div>
 					<motion.div
 						whileInView={{ opacity: 1, x: 0 }}
-						initial={{ opacity: 0, x: 80 }}
+						initial={{ opacity: 0, x: 40 }}
 						transition={{ duration: 0.5 }}
 						className='TechIconWripper border-red-600 hover:shadow-red-600 '
 					>

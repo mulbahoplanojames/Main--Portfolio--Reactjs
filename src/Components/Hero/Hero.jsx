@@ -10,7 +10,7 @@ const Hero = () => {
 				<div className=' md:w-heroContent1 w-full h-fit '>
 					<motion.h1
 						whileInView={{ opcity: 1, y: 0 }}
-						initial={{ opcity: 0, y: -200 }}
+						initial={{ opcity: 0, y: -100 }}
 						transition={{ duration: 1 }}
 						className='md:text-6xl text-5xl font-bold pb-6'
 					>
@@ -18,7 +18,7 @@ const Hero = () => {
 					</motion.h1>
 					<motion.p
 						whileInView={{ opcity: 1, x: 0 }}
-						initial={{ opcity: 0, x: -300 }}
+						initial={{ opcity: 0, x: -100 }}
 						transition={{ duration: 2 }}
 						className='text-lg pb-8'
 					>
@@ -27,10 +27,10 @@ const Hero = () => {
 					<HeroButton />
 				</div>
 				<motion.div
-					whileInView={{ opcity: 1, x: 0 }}
-					initial={{ opcity: 0, x: 300 }}
+					whileInView={{ opcity: 1, y: 0 }}
+					initial={{ opcity: 0, y: -200 }}
 					transition={{ duration: 2 }}
-					className='bg-red-600 py-20 md:w-heroContent2 h-80 md:h-80 order-first lg:order-last w-[340px] rounded-full'
+					className='bg-red-600 py-20 md:w-heroContent2_lg w-heroContent2_Sm  h-80 md:h-80 order-first lg:order-last  rounded-full'
 				></motion.div>
 			</div>
 		</>

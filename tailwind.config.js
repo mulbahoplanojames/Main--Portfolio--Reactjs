@@ -12,7 +12,8 @@ export default {
 
 			width: {
 				heroContent1: "500px",
-				heroContent2: "330px",
+				heroContent2_lg: "330px",
+				heroContent2_Sm: "300px",
 			},
 		},
 	},
