@@ -6,7 +6,10 @@
 
 @layer components {
 	.TechIconWripper {
-		@apply w-28 h-20  border-2 border-neutral-600 cursor-pointer rounded-lg;
+		@apply w-28 h-28  border-4 shadow-lg border-neutral-600 cursor-pointer rounded-lg flex justify-center items-center flex-col gap-y-1;
+	}
+	.icon {
+		@apply size-16;
 	}
 }
 

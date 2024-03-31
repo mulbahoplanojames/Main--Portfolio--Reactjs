@@ -6,6 +6,8 @@ export default {
 			colors: {
 				1: "#0a2640",
 				2: "#243073",
+				3: "#f9dc5c",
+				4: "#1783a7",
 			},
 
 			width: {
