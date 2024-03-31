@@ -7,7 +7,7 @@ const Hero = () => {
 		<>
 			<div className='grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-y-9 place-items-center px-2 '>
 				<div className=' md:w-heroContent1 w-full h-fit '>
-					<h1 className='text-6xl font-bold pb-6'>
+					<h1 className='md:text-6xl text-5xl font-bold pb-6'>
 						Front-end <span className='text-2'>React</span> Developer
 					</h1>
 					<p className='text-lg pb-8'>{ABOUT_ME}</p>
