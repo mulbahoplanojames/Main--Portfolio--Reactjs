@@ -1,6 +1,6 @@
 //! Data about me from the Constant Component
 import ABOUT_ME from "../../Constant/Constant";
-// import HeroButton from "../../Interfaces/Hero Button/HeroButton";
+import HeroButton from "../../Interfaces/Hero Button/HeroButton";
 
 const Hero = () => {
 	return (
@@ -11,7 +11,7 @@ const Hero = () => {
 						Front-end <span className='text-2'>React</span> Developer
 					</h1>
 					<p className='text-lg pb-8'>{ABOUT_ME}</p>
-					{/* <HeroButton /> */}
+					<HeroButton />
 				</div>
 				<div className='bg-red-600 py-20 md:w-heroContent2 h-80 md:h-80 order-first lg:order-last w-[340px] rounded-full'></div>
 			</div>
