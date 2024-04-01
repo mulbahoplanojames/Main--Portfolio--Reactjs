@@ -14,6 +14,8 @@ export default {
 				heroContent1: "500px",
 				heroContent2_lg: "330px",
 				heroContent2_Sm: "300px",
+				card_lg: "80%",
+				card_sm: "320px",
 			},
 		},
 	},
