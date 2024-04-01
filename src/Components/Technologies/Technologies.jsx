@@ -6,7 +6,14 @@ const Technologies = () => {
 	return (
 		<>
 			<div className='mt-24 text-center mb-28'>
-				<h1 className='text-4xl pb-8'>Technologies</h1>
+				<motion.h1
+					whileInView={{ opacity: 1, y: 0 }}
+					initial={{ opacity: 0, y: -100 }}
+					transition={{ duration: 1 }}
+					className='text-4xl pb-8'
+				>
+					Technologies
+				</motion.h1>
 
 				<div className='flex flex-wrap gap-10 justify-center items-center'>
 					<motion.div

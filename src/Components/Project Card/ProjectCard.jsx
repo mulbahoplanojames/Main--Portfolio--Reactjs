@@ -1,5 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import { BsArrowUpRightSquareFill } from "react-icons/bs";
+import { motion } from "framer-motion";
+
 const ProjectCard = ({
 	image,
 	projectTitle,
@@ -10,7 +12,12 @@ const ProjectCard = ({
 }) => {
 	return (
 		<>
-			<div className='projectCard'>
+			<motion.div
+				whileInView={{ opacity: 1, y: 0 }}
+				initial={{ opacity: 0, y: 200 }}
+				transition={{ duration: 0.5 }}
+				className='projectCard'
+			>
 				<div className='projectContentWripper h-72  shadow-lg shadow-gray-500'>
 					<a href={liveDemo} target='blank'>
 						<img src={image} alt='' className='w-full h-full object-cover' />
@@ -35,7 +42,7 @@ const ProjectCard = ({
 						</a>
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</>
 	);
 };
