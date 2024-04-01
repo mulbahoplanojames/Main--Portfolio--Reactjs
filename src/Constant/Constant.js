@@ -2,6 +2,7 @@ import DigitStemImg from "/src/assets/digitstem.png";
 import DevTechImg from "/src/assets/Dev!Tech_Blog.png";
 import BoldImg from "/src/assets/Bold.png";
 import Math4kidsImg from "/src/assets/math4kids.png";
+import BinageImg from "/src/assets/Binage!9.png";
 
 const ABOUT_ME = ` Hello there! I'm Oplano James Mulbah a web developer
 & Software Engineer, very passionate and dedicated to
@@ -36,7 +37,7 @@ export const PROJECTS = [
 		image: DigitStemImg,
 		projectTitle: "DigitStem Clone Landing Page",
 		projectDescription:
-			"This project is a front-end clone of the Digitstem platform that connects vendors to buyers through active affiliates. It offers various features and services aimed at facilitating online business transactions.",
+			"This project is a Front-end clone of the Digitstem platform that connects vendors to buyers through active affiliates. It offers various features and services aimed at facilitating online business transactions.",
 		technologiesUsed: ["HTML", "Vanilla CSS", "JavaScript"],
 		liveDemo: "https://mulbahoplanojames.github.io/Digitstem-Clone/",
 		code: "https://github.com/mulbahoplanojames/Digitstem-Clone",
@@ -54,13 +55,13 @@ export const PROJECTS = [
 
 	{
 		projectID: 5,
-		image: DigitStemImg,
-		projectTitle: "Podia Clone",
+		image: BinageImg,
+		projectTitle: "Binage!9 web Application",
 		projectDescription:
-			"A clone of the Podia platform, offering creators the ability to sell online courses, digital downloads, and memberships. It includes features for content creation, marketing, and monetization to empower creators in sharing their knowledge and products.",
-		technologiesUsed: ["React", "Tailwind"],
-		liveDemo: "https://boldo-com.vercel.app/",
-		code: "https://github.com/mulbahoplanojames/Boldo.com",
+			"This is a Front-end project for a web app that for a virtual company that is involve in developing web site and web applications for clients for a reasonable price and their work is done effectively",
+		technologiesUsed: ["React", "Css Modules", "React Syyled Components"],
+		liveDemo: "https://binage9.netlify.app/",
+		code: "https://github.com/mulbahoplanojames/Binage-9",
 	},
 ];
 
