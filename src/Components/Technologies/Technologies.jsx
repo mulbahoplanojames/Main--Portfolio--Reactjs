@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Technologies = () => {
 	return (
 		<>
-			<div className='mt-24 text-center mb-80'>
+			<div className='mt-24 text-center mb-28'>
 				<h1 className='text-4xl pb-8'>Technologies</h1>
 
 				<div className='flex flex-wrap gap-10 justify-center items-center'>

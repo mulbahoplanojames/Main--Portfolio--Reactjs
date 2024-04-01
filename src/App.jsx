@@ -3,6 +3,7 @@
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import Technologies from "./Components/Technologies/Technologies";
+import Portfolio from "./Components/Portfolio/Portfolio";
 
 const App = () => {
 	return (
@@ -13,6 +14,7 @@ const App = () => {
 			<div className='container mx-auto md:px-10 px-2	mt-40'>
 				<Hero />
 				<Technologies />
+				<Portfolio />
 			</div>
 		</>
 	);
