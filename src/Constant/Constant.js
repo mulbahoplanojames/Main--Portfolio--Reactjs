@@ -5,14 +5,14 @@ export const navLinks = [
 	{ id: 4, href: "/work" },
 ];
 
-export const ABOUT_ME = ` Hello there! I'm Oplano James Mulbah a web developer
+const ABOUT_ME = ` Hello there! I'm Oplano James Mulbah a web developer
 & Software Engineer, very passionate and dedicated to
 my work. With experience as a professional a wed developer, I
 have acquired the skills and knowledge necessary to make your
 project a success. I enjoy every step of the design process, from
 discussion and collaboration. `;
 
-const PROJECTS = [
+export const PROJECTS = [
 	{
 		projectID: 1,
 		projectTitle: "React E-commerce web app",
@@ -50,4 +50,4 @@ const PROJECTS = [
 	},
 ];
 
-export default PROJECTS;
+export default ABOUT_ME;
