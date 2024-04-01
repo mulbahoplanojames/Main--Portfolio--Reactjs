@@ -1,4 +1,5 @@
 import DigitStemImg from "/src/assets/digitstem.png";
+import DevTechImg from "/src/assets/Dev!Tech_Blog.png";
 
 const ABOUT_ME = ` Hello there! I'm Oplano James Mulbah a web developer
 & Software Engineer, very passionate and dedicated to
@@ -10,6 +11,26 @@ discussion and collaboration. `;
 export const PROJECTS = [
 	{
 		projectID: 1,
+		image: DevTechImg,
+		projectTitle: "Dev!Tech Blog and Ebooks",
+		projectDescription:
+			"A comprehensive blogging platform focusing on technology-related topics. Users can explore a wide range of ebooks and blogs. It provides a user-friendly interface to navigate through different sections of the web App. It also as a feature where users access OpenAi.",
+		technologiesUsed: ["React", "Tailwind Css"],
+		liveDemo: "https://devtech-ebook-blog.netlify.app/",
+		code: "https://github.com/mulbahoplanojames/Dev-Tech-Ebook---Blog",
+	},
+	{
+		projectID: 2,
+		image: DevTechImg,
+		projectTitle: "Boldo Company website",
+		projectDescription:
+			"This Project is for a web application the allow client and to unit with other business partners to buy products and view some of the latest blog posts..",
+		technologiesUsed: ["React", "Vanilla CSS", "JavaScript"],
+		liveDemo: "https://boldo-com.vercel.app/",
+		code: "https://github.com/mulbahoplanojames/Boldo.com",
+	},
+	{
+		projectID: 3,
 		image: DigitStemImg,
 		projectTitle: "React E-commerce web app",
 		projectDescription:
@@ -17,29 +38,14 @@ export const PROJECTS = [
 		technologiesUsed: ["React", "JavaScript", "HTML", "CSS"],
 	},
 	{
-		projectID: 2,
-		image: DigitStemImg,
-		projectTitle: "IITECH Company website",
-		projectDescription:
-			"The official website for IITECH Company, showcasing its products, services, and corporate information. Built using modern web technologies to ensure a responsive and visually appealing user experience.",
-		technologiesUsed: ["HTML", "CSS", "JavaScript"],
-	},
-	{
-		projectID: 3,
+		projectID: 4,
 		image: DigitStemImg,
 		projectTitle: "Car Rental React website",
 		projectDescription:
 			"A React-based website for a car rental service, allowing users to browse available vehicles, make reservations, and manage bookings. It integrates with backend systems to provide real-time availability and pricing information.",
 		technologiesUsed: ["React", "Tailwind"],
 	},
-	{
-		projectID: 4,
-		image: DigitStemImg,
-		projectTitle: "Dev!Tech Blog and Ebooks",
-		projectDescription:
-			"A comprehensive blogging platform focusing on technology-related topics. Users can explore a wide range of articles, tutorials, and ebooks covering various aspects of software development, IT, and emerging technologies.",
-		technologiesUsed: ["HTML", "CSS"],
-	},
+
 	{
 		projectID: 5,
 		image: DigitStemImg,

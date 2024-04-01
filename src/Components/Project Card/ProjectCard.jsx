@@ -5,12 +5,16 @@ const ProjectCard = ({
 	projectTitle,
 	projectDescription,
 	technologiesUsed,
+	liveDemo,
+	code,
 }) => {
 	return (
 		<>
 			<div className='projectCard'>
 				<div className='projectContentWripper h-72  shadow-lg shadow-gray-500'>
-					<img src={image} alt='' className='w-full h-full object-cover' />
+					<a href={liveDemo}>
+						<img src={image} alt='' className='w-full h-full object-cover' />
+					</a>
 				</div>
 				<div className='projectContentWripper h-fit p-4'>
 					<p className='text-[1.3rem] font-bold pb-3'>{projectTitle}</p>
@@ -19,12 +23,16 @@ const ProjectCard = ({
 						{technologiesUsed}
 					</div>
 					<div className='flex md:gap-x-10 gap-x-8'>
-						<p className='text-lg font-bold flex justify-center items-center gap-x-2'>
-							Code <FaGithub />
-						</p>
-						<p className='text-lg font-bold flex justify-center items-center gap-x-2'>
-							Live demo <BsArrowUpRightSquareFill />
-						</p>
+						<a href={code} target='blank'>
+							<p className='text-lg font-bold flex justify-center items-center gap-x-2'>
+								Code <FaGithub />
+							</p>
+						</a>
+						<a href={liveDemo} target='blank'>
+							<p className='text-lg font-bold flex justify-center items-center gap-x-2'>
+								Live demo <BsArrowUpRightSquareFill />
+							</p>
+						</a>
 					</div>
 				</div>
 			</div>

@@ -16,6 +16,8 @@ const Portfolio = () => {
 						image={project.image}
 						projectTitle={project.projectTitle}
 						projectDescription={project.projectDescription}
+						liveDemo={project.liveDemo}
+						code={project.code}
 						technologiesUsed={project.technologiesUsed.map((technology, i) => (
 							<p
 								key={i}
