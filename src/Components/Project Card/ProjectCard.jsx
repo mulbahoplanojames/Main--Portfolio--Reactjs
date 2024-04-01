@@ -12,7 +12,7 @@ const ProjectCard = ({
 		<>
 			<div className='projectCard'>
 				<div className='projectContentWripper h-72  shadow-lg shadow-gray-500'>
-					<a href={liveDemo}>
+					<a href={liveDemo} target='blank'>
 						<img src={image} alt='' className='w-full h-full object-cover' />
 					</a>
 				</div>
