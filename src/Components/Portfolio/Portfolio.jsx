@@ -4,7 +4,7 @@ import ProjectCard from "../Project Card/ProjectCard";
 const Portfolio = () => {
 	return (
 		<>
-			<div className='md:px-10 px-6 mb-28 md:text-center text-left '>
+			<div className='md:px-10 px-3 mb-28 md:text-center text-left '>
 				<h1 className='text-3xl uppercase font-bold text-2  pb-2'>Portfolio</h1>
 				<p className='text-lg font-bold pb-6'>
 					Each project is a distinct masterpiece.

@@ -12,7 +12,7 @@
 		@apply size-16;
 	}
 	.projectCard {
-		@apply md:w-card_lg w-full h-fit shadow-lg shadow-neutral-600 rounded-md mx-auto md:p-8 p-4 flex flex-wrap flex-col md:flex-row gap-y-6 md:gap-x-6  md:flex-nowrap;
+		@apply md:w-card_lg w-full h-fit shadow-lg shadow-neutral-300 rounded-md mx-auto md:p-8 p-4 flex flex-wrap flex-col md:flex-row gap-y-6 md:gap-x-6 md:flex-nowrap md:mb-10 mb-12;
 	}
 	.projectContentWripper {
 		@apply md:w-2/4 w-full  rounded-xl overflow-hidden cursor-pointer;
