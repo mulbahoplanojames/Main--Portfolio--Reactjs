@@ -17,7 +17,12 @@ const Portfolio = () => {
 						projectTitle={project.projectTitle}
 						projectDescription={project.projectDescription}
 						technologiesUsed={project.technologiesUsed.map((technology, i) => (
-							<div key={i}></div>
+							<p
+								key={i}
+								className='shadow-md shadow-slate-400 px-4 py-1 rounded-lg font-bold'
+							>
+								{technology}
+							</p>
 						))}
 					/>
 				))}

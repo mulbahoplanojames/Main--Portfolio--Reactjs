@@ -15,7 +15,7 @@
 		@apply md:w-card_lg w-full h-fit shadow-lg shadow-neutral-600 rounded-md mx-auto md:p-8 p-4 flex flex-wrap flex-col md:flex-row gap-y-6 md:gap-x-6  md:flex-nowrap;
 	}
 	.projectContentWripper {
-		@apply md:w-2/4 w-full  bg-red-600 rounded-xl shadow-lg shadow-gray-500 overflow-hidden cursor-pointer;
+		@apply md:w-2/4 w-full  rounded-xl overflow-hidden cursor-pointer;
 	}
 }
 
