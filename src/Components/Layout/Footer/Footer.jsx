@@ -10,7 +10,7 @@ const Footer = () => {
 					whileInView={{ opacity: 1, y: 0 }}
 					initial={{ opacity: 0, y: -30 }}
 					transition={{ duration: 0.6 }}
-					className='text-white text-2xl'
+					className='text-white md:text-2xl text-xl'
 				>
 					Copyright &copy; 2024. Oplano M.
 				</motion.p>

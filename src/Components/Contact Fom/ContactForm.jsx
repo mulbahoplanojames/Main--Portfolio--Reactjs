@@ -48,16 +48,16 @@ const ContactForm = () => {
 			<section className='lg:px-10 md:mt-24 mt-16 py-14 '>
 				<div className='text-center md:pb-10 pb-6'>
 					<motion.h2
-						whileInView={{ opcity: 1, x: 0 }}
-						initial={{ opcity: 0, x: -60 }}
+						whileInView={{ opcity: 1, y: 0 }}
+						initial={{ opcity: 0, y: -30 }}
 						transition={{ duration: 1 }}
 						className='text-lg uppercase text-1 font-medium pb-2'
 					>
 						Contact
 					</motion.h2>
 					<motion.h1
-						whileInView={{ opacity: 1, x: 0 }}
-						initial={{ opacity: 0, x: 50 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						initial={{ opacity: 0, y: 30 }}
 						transition={{ duration: 1 }}
 						className='text-4xl capitalize font-semibold'
 					>
@@ -177,8 +177,8 @@ const ContactForm = () => {
 
 								<p className='pt-2'>{result}</p>
 							</motion.div>
-							<Button text={"Send "} />
-							{/* <p className='pt-4 text-red-500'>{result}</p> */}
+							{/* <Button text={"Send "} /> */}
+							<p className='pt-4 text-red-500'>{result}</p>
 						</form>
 					</div>
 				</div>

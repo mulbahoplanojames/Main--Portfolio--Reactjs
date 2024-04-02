@@ -13,13 +13,13 @@ const Hero = () => {
 						whileInView={{ opcity: 1, y: 0 }}
 						initial={{ opcity: 0, y: -70 }}
 						transition={{ duration: 1 }}
-						className='md:text-6xl text-5xl font-bold pb-6'
+						className='md:text-5xl text-5xl font-bold pb-6'
 					>
 						Front-end <span className='text-2'>React</span> Developer
 					</motion.h1>
 					<motion.p
 						whileInView={{ opcity: 1, x: 0 }}
-						initial={{ opcity: 0, x: -100 }}
+						initial={{ opcity: 0, x: -40 }}
 						transition={{ duration: 2 }}
 						className='text-lg pb-8'
 					>
@@ -29,8 +29,8 @@ const Hero = () => {
 				</div>
 				<motion.div
 					whileInView={{ opcity: 1, y: 0 }}
-					initial={{ opcity: 0, y: -200 }}
-					transition={{ duration: 2 }}
+					initial={{ opcity: 0, y: -100 }}
+					transition={{ duration: 1 }}
 					className='md:w-heroContent2_lg w-heroContent2_Sm  h-80 md:h-80 order-first md:order-last  rounded-full overflow-hidden '
 				>
 					<img
