@@ -2,8 +2,34 @@ import { IoIosMail } from "react-icons/io";
 import { MdPhoneInTalk, MdLocationOn } from "react-icons/md";
 import Button from "../../Interfaces/Button/Button";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const ContactForm = () => {
+	const [result, setResult] = useState("");
+
+	const onSubmit = async (event) => {
+		event.preventDefault();
+		setResult("Sending....");
+		const formData = new FormData(event.target);
+
+		formData.append("access_key", "562d6485-71c4-4390-9184-2c1cf99e08b5");
+
+		const response = await fetch("https://api.web3forms.com/submit", {
+			method: "POST",
+			body: formData,
+		});
+
+		const data = await response.json();
+
+		if (data.success) {
+			setResult("Form Submitted Successfully");
+			event.target.reset();
+		} else {
+			console.log("Error", data);
+			setResult(data.message);
+		}
+	};
+
 	return (
 		<>
 			<section className='lg:px-10 md:mt-24 mt-16 py-14 '>
@@ -75,14 +101,14 @@ const ContactForm = () => {
 						</motion.p>
 					</div>
 					{/* //! Contact From  */}
-					<motion.div
-						whileInView={{ opcity: 1, x: 0 }}
-						initial={{ opcity: 0, x: 60 }}
-						transition={{ duration: 1 }}
-						className=' px-1 sm:px-7 py-2 w-full'
-					>
-						<form onSubmit={"onSubmit"}>
-							<div className='mb-6'>
+					<div className=' px-1 sm:px-7 py-2 w-full'>
+						<form onSubmit={onSubmit}>
+							<motion.div
+								whileInView={{ opcity: 1, x: 0 }}
+								initial={{ opcity: 0, x: 60 }}
+								transition={{ duration: 1 }}
+								className='mb-6'
+							>
 								<label
 									htmlFor='email'
 									className='text-xl pb-1 opacity-90 inline-block'
@@ -96,8 +122,13 @@ const ContactForm = () => {
 									required
 									className='input'
 								/>
-							</div>
-							<div className='mb-6'>
+							</motion.div>
+							<motion.div
+								whileInView={{ opcity: 1, x: 0 }}
+								initial={{ opcity: 0, x: 60 }}
+								transition={{ duration: 2 }}
+								className='mb-6'
+							>
 								<label
 									htmlFor='phone'
 									className='text-xl pb-1 opacity-90 inline-block'
@@ -111,8 +142,13 @@ const ContactForm = () => {
 									required
 									className='input'
 								/>
-							</div>
-							<div className='mb-6'>
+							</motion.div>
+							<motion.div
+								whileInView={{ opcity: 1, x: 0 }}
+								initial={{ opcity: 0, x: 60 }}
+								transition={{ duration: 2 }}
+								className='mb-6'
+							>
 								<label
 									htmlFor='message'
 									className='text-xl pb-1 opacity-90 inline-block'
@@ -125,11 +161,13 @@ const ContactForm = () => {
 									placeholder='Enter your message'
 									className='input h-24 resize-none py-3'
 								></textarea>
-							</div>
+
+								<p className='pt-2'>{result}</p>
+							</motion.div>
 							<Button text={"Send "} />
 							{/* <p className='pt-4 text-red-500'>{result}</p> */}
 						</form>
-					</motion.div>
+					</div>
 				</div>
 			</section>
 		</>
