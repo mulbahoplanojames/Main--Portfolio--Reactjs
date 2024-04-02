@@ -1,6 +1,6 @@
 //! Data about me from the Constant Component
 import ABOUT_ME from "../../Constant/Constant";
-import HeroButton from "../../Interfaces/Hero Button/HeroButton";
+import Button from "../../Interfaces/Button/Button";
 import { motion } from "framer-motion";
 import Hero_Iamge from "/src/assets/illu.jpg";
 
@@ -25,7 +25,7 @@ const Hero = () => {
 					>
 						{ABOUT_ME}
 					</motion.p>
-					<HeroButton />
+					<Button text={"Download Resume"} />
 				</div>
 				<motion.div
 					whileInView={{ opcity: 1, y: 0 }}

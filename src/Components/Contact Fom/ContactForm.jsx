@@ -12,13 +12,15 @@ const ContactForm = () => {
 					<h1 className='text-4xl capitalize font-semibold'>Get in touch</h1>
 				</div>
 				<div className='grid sm:grid-cols-2 grid-cols-1 px-3 place-items-center '>
+					{/* //! Contact details information */}
 					<div className='px-3 py-4'>
-						<h1 className='text-3xl pb-3'>Send us a message</h1>
+						<h1 className='text-3xl pb-3'>
+							Don&apos;t be shy! Hit me up! 👇 👉
+						</h1>
 						<p className='text-xl pb-3 opacity-70'>
-							Feel free to reach out through the contact from or find our
-							contact information below. Your feedback, questions and
-							suggestionsare important to us as we strive to provide exceptional
-							service.
+							Feel free to reach out through the contact from or find my contact
+							information below. Your work is important to me as i strive to
+							provide exceptional service.
 						</p>
 						<p className='text-xl pb-4 flex items-center gap-x-1'>
 							<IoIosMail className='text-4xl text-1' />
@@ -33,23 +35,9 @@ const ContactForm = () => {
 							KG 763 Gisozi, Kigali, Rwanda
 						</p>
 					</div>
+					{/* //! Contact From  */}
 					<div className=' px-1 sm:px-7 py-2 w-full'>
 						<form onSubmit={"onSubmit"}>
-							<div className='mb-6'>
-								<label
-									htmlFor='name'
-									className='text-xl pb-1 opacity-90 inline-block'
-								>
-									Your name*
-								</label>
-								<input
-									type='text'
-									name='name'
-									placeholder='Enter your name'
-									required
-									className='w-full bg-2 h-11 px-3 outline-none border-none rounded-sm focus:ring-inset focus:ring-4'
-								/>
-							</div>
 							<div className='mb-6'>
 								<label
 									htmlFor='email'

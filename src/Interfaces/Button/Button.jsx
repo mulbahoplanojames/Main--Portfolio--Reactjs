@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const HeroButton = () => {
+const HeroButton = ({ text }) => {
 	return (
 		<>
 			<motion.button
@@ -9,7 +9,7 @@ const HeroButton = () => {
 				transition={{ duration: 1 }}
 				className='bg-2 px-6 py-2 rounded-md text-lg text-white hover:opacity-55 border-none'
 			>
-				Download Resume
+				{text}
 			</motion.button>
 		</>
 	);
