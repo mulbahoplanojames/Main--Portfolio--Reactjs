@@ -9,10 +9,18 @@ const Navbar = () => {
 				<h1 className='text-2xl font-bold text-1'>Oplano M.</h1>
 
 				<div className='flex items-center justify-center gap-5'>
-					<SiUpwork className='text-2xl cursor-pointer hover:text-green-700' />
-					<FaGithub className='text-2xl cursor-pointer' />
-					<FaInstagram className='text-2xl cursor-pointer hover:text-red-700' />
-					<FaSquareXTwitter className='text-2xl cursor-pointer' />
+					<a href='https://github.com/mulbahoplanojames' target='blank'>
+						<SiUpwork className='text-2xl cursor-pointer hover:text-green-700' />
+					</a>
+					<a href='https://github.com/mulbahoplanojames' target='blank'>
+						<FaGithub className='text-2xl cursor-pointer' />
+					</a>
+					<a href='https://github.com/mulbahoplanojames' target='blank'>
+						<FaInstagram className='text-2xl cursor-pointer hover:text-red-700' />
+					</a>
+					<a href='https://github.com/mulbahoplanojames' target='blank'>
+						<FaSquareXTwitter className='text-2xl cursor-pointer' />
+					</a>
 				</div>
 			</nav>
 		</>
