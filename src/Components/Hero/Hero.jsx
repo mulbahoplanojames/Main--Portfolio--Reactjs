@@ -2,7 +2,7 @@
 import ABOUT_ME from "../../Constant/Constant";
 import Button from "../../Interfaces/Button/Button";
 import { motion } from "framer-motion";
-import Hero_Iamge from "/src/assets/illu.jpg";
+import Hero_Iamge from "/src/assets/oplano.jpg";
 
 const Hero = () => {
 	return (
@@ -31,7 +31,7 @@ const Hero = () => {
 					whileInView={{ opcity: 1, y: 0 }}
 					initial={{ opcity: 0, y: -200 }}
 					transition={{ duration: 2 }}
-					className='py-20 md:w-heroContent2_lg w-heroContent2_Sm  h-80 md:h-80 order-first md:order-last  rounded-full overflow-hidden '
+					className='md:w-heroContent2_lg w-heroContent2_Sm  h-80 md:h-80 order-first md:order-last  rounded-full overflow-hidden '
 				>
 					<img
 						src={Hero_Iamge}
