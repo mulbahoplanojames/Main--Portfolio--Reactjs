@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 const Footer = () => {
 	return (
 		<>
-			<div className='bg-1 py-16 md:px-44 px-8 flex md:justify-between justify-center items-center gap-y-12 flex-wrap  '>
+			<div className='bg-1 w-full py-16 md:px-44 px-8 flex md:justify-between justify-center items-center gap-y-12 flex-wrap  '>
 				<motion.p
 					whileInView={{ opacity: 1, y: 0 }}
-					initial={{ opacity: 0, y: -50 }}
+					initial={{ opacity: 0, y: -30 }}
 					transition={{ duration: 0.6 }}
 					className='text-white text-2xl'
 				>
@@ -16,7 +16,7 @@ const Footer = () => {
 				</motion.p>
 				<motion.div
 					whileInView={{ opacity: 1, y: 0 }}
-					initial={{ opacity: 0, y: 50 }}
+					initial={{ opacity: 0, y: 30 }}
 					transition={{ duration: 0.6 }}
 					className='flex items-center justify-center gap-x-10'
 				>

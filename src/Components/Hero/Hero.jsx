@@ -11,7 +11,7 @@ const Hero = () => {
 				<div className=' md:w-heroContent1 w-full h-fit '>
 					<motion.h1
 						whileInView={{ opcity: 1, y: 0 }}
-						initial={{ opcity: 0, y: -100 }}
+						initial={{ opcity: 0, y: -70 }}
 						transition={{ duration: 1 }}
 						className='md:text-6xl text-5xl font-bold pb-6'
 					>

@@ -78,7 +78,7 @@ const ContactForm = () => {
 						<motion.p
 							whileInView={{ opcity: 1, x: 0 }}
 							initial={{ opcity: 0, x: -60 }}
-							transition={{ duration: 3 }}
+							transition={{ duration: 2 }}
 							className='text-xl pb-3 opacity-70'
 						>
 							Feel free to reach out through the contact from or find my contact
@@ -87,7 +87,7 @@ const ContactForm = () => {
 						</motion.p>
 						<motion.p
 							whileInView={{ opcity: 1, x: 0 }}
-							initial={{ opcity: 0, x: -60 }}
+							initial={{ opcity: 0, x: -30 }}
 							transition={{ duration: 1 }}
 							className='text-xl pb-4 flex items-center gap-x-1'
 						>
@@ -96,7 +96,7 @@ const ContactForm = () => {
 						</motion.p>
 						<motion.p
 							whileInView={{ opcity: 1, x: 0 }}
-							initial={{ opcity: 0, x: -60 }}
+							initial={{ opcity: 0, x: -30 }}
 							transition={{ duration: 1 }}
 							className='text-xl pb-4 flex items-center gap-x-1'
 						>
@@ -105,7 +105,7 @@ const ContactForm = () => {
 						</motion.p>
 						<motion.p
 							whileInView={{ opcity: 1, x: 0 }}
-							initial={{ opcity: 0, x: -60 }}
+							initial={{ opcity: 0, x: -30 }}
 							transition={{ duration: 1 }}
 							className='text-xl pb-4 flex items-center gap-x-1'
 						>
@@ -118,8 +118,8 @@ const ContactForm = () => {
 						<form onSubmit={onSubmit}>
 							<motion.div
 								whileInView={{ opcity: 1, x: 0 }}
-								initial={{ opcity: 0, x: 60 }}
-								transition={{ duration: 1 }}
+								initial={{ opcity: 0, x: 30 }}
+								transition={{ duration: 2 }}
 								className='mb-6'
 							>
 								<label
@@ -138,7 +138,7 @@ const ContactForm = () => {
 							</motion.div>
 							<motion.div
 								whileInView={{ opcity: 1, x: 0 }}
-								initial={{ opcity: 0, x: 60 }}
+								initial={{ opcity: 0, x: 30 }}
 								transition={{ duration: 2 }}
 								className='mb-6'
 							>
@@ -158,7 +158,7 @@ const ContactForm = () => {
 							</motion.div>
 							<motion.div
 								whileInView={{ opcity: 1, x: 0 }}
-								initial={{ opcity: 0, x: 60 }}
+								initial={{ opcity: 0, x: 30 }}
 								transition={{ duration: 2 }}
 								className='mb-6'
 							>

@@ -5,7 +5,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 const Navbar = () => {
 	return (
 		<>
-			<nav className='flex justify-between py-6 lg:px-16 px-4 shadow-lg fixed top-0 w-full bg-white z-20'>
+			<nav className='fixed top-0 left-0 w-full flex justify-between py-6 lg:px-16 px-4 shadow-lg  bg-white z-10'>
 				<h1 className='text-2xl font-bold text-1'>Oplano M.</h1>
 
 				<div className='flex items-center justify-center gap-5'>
