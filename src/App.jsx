@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import Technologies from "./Components/Technologies/Technologies";
 import Portfolio from "./Components/Portfolio/Portfolio";
+// import ContactForm from "./Components/Contact Fom/ContactForm";
 
 const App = () => {
 	return (
@@ -15,6 +16,7 @@ const App = () => {
 				<Hero />
 				<Technologies />
 				<Portfolio />
+				{/* <ContactForm /> */}
 			</div>
 		</>
 	);

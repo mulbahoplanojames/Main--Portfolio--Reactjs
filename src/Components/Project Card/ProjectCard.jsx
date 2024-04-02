@@ -15,14 +15,19 @@ const ProjectCard = ({
 			<motion.div
 				whileInView={{ opacity: 1, y: 0 }}
 				initial={{ opacity: 0, y: 200 }}
-				transition={{ duration: 0.5 }}
+				transition={{ duration: 0.7 }}
 				className='projectCard'
 			>
-				<div className='projectContentWripper h-72  shadow-lg shadow-gray-500'>
+				<motion.div
+					whileHover={{ opacity: 1, scale: 1.3 }}
+					initial={{ opacity: 1, scale: 1 }}
+					transition={{ duration: 0.5 }}
+					className='projectContentWripper h-72  shadow-lg shadow-gray-500'
+				>
 					<a href={liveDemo} target='blank'>
 						<img src={image} alt='' className='w-full h-full object-cover' />
 					</a>
-				</div>
+				</motion.div>
 				<div className='projectContentWripper h-fit p-4'>
 					<p className='text-[1.3rem] font-bold pb-3'>{projectTitle}</p>
 					<p className='text-left text-lg pb-6'>{projectDescription}</p>
