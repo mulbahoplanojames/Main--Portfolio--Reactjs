@@ -1,15 +1,29 @@
 import { IoIosMail } from "react-icons/io";
 import { MdPhoneInTalk, MdLocationOn } from "react-icons/md";
+import Button from "../../Interfaces/Button/Button";
+import { motion } from "framer-motion";
 
 const ContactForm = () => {
 	return (
 		<>
 			<section className='lg:px-10 md:mt-24 mt-16 py-14 '>
 				<div className='text-center md:pb-10 pb-6'>
-					<h2 className='text-lg uppercase text-1 font-medium pb-2'>
-						Contact Us
-					</h2>
-					<h1 className='text-4xl capitalize font-semibold'>Get in touch</h1>
+					<motion.h2
+						whileInView={{ opcity: 1, x: 0 }}
+						initial={{ opcity: 0, x: -70 }}
+						transition={{ duration: 1 }}
+						className='text-lg uppercase text-1 font-medium pb-2'
+					>
+						Contact
+					</motion.h2>
+					<motion.h1
+						whileInView={{ opacity: 1, x: 0 }}
+						initial={{ opacity: 0, x: 70 }}
+						transition={{ duration: 1 }}
+						className='text-4xl capitalize font-semibold'
+					>
+						Get in touch
+					</motion.h1>
 				</div>
 				<div className='grid sm:grid-cols-2 grid-cols-1 px-3 place-items-center '>
 					{/* //! Contact details information */}
@@ -50,7 +64,7 @@ const ContactForm = () => {
 									name='email'
 									placeholder='Enter your email'
 									required
-									className='w-full bg-2 h-11 px-3 outline-none border-none rounded-sm focus:ring-inset focus:ring-4 '
+									className='input'
 								/>
 							</div>
 							<div className='mb-6'>
@@ -65,7 +79,7 @@ const ContactForm = () => {
 									name='phone'
 									placeholder='Enter your phone number'
 									required
-									className='w-full bg-2 h-11 px-3 outline-none border-none rounded-sm focus:ring-inset focus:ring-4 '
+									className='input'
 								/>
 							</div>
 							<div className='mb-6'>
@@ -79,10 +93,10 @@ const ContactForm = () => {
 									name='message'
 									required
 									placeholder='Enter your message'
-									className='w-full resize-none bg-2 h-24 outline-none px-3 py-2 focus:ring-inset focus:ring-4 '
+									className='input h-24 resize-none py-3'
 								></textarea>
 							</div>
-							{/* <Button text={"Submit now"} /> */}
+							<Button text={"Send "} />
 							{/* <p className='pt-4 text-red-500'>{result}</p> */}
 						</form>
 					</div>

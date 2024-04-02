@@ -18,16 +18,11 @@ const ProjectCard = ({
 				transition={{ duration: 0.7 }}
 				className='projectCard'
 			>
-				<motion.div
-					whileHover={{ opacity: 1, scale: 1.3 }}
-					initial={{ opacity: 1, scale: 1 }}
-					transition={{ duration: 0.5 }}
-					className='projectContentWripper h-72  shadow-lg shadow-gray-500'
-				>
+				<div className='projectContentWripper h-72  shadow-lg shadow-gray-500'>
 					<a href={liveDemo} target='blank'>
 						<img src={image} alt='' className='w-full h-full object-cover' />
 					</a>
-				</motion.div>
+				</div>
 				<div className='projectContentWripper h-fit p-4'>
 					<p className='text-[1.3rem] font-bold pb-3'>{projectTitle}</p>
 					<p className='text-left text-lg pb-6'>{projectDescription}</p>

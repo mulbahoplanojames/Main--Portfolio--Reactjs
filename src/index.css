@@ -17,6 +17,9 @@
 	.projectContentWripper {
 		@apply md:w-2/4 w-full  rounded-xl overflow-hidden cursor-pointer;
 	}
+	.input {
+		@apply w-full bg-[#f5f5f5] h-11 px-3 outline-none border-none rounded-sm focus:ring-inset focus:ring-2;
+	}
 }
 
 :root {
