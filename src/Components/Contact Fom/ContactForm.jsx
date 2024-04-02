@@ -3,6 +3,7 @@ import { MdPhoneInTalk, MdLocationOn } from "react-icons/md";
 import Button from "../../Interfaces/Button/Button";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import swal from "sweetalert";
 
 const ContactForm = () => {
 	const [result, setResult] = useState("");
@@ -24,9 +25,21 @@ const ContactForm = () => {
 		if (data.success) {
 			setResult("Form Submitted Successfully");
 			event.target.reset();
+
+			Swal.fire({
+				title: "🎉👏🙌✨🎊",
+				text: "Message sent successfully!",
+				icon: "success",
+			});
 		} else {
 			console.log("Error", data);
 			setResult(data.message);
+
+			Swal.fire({
+				icon: "error",
+				title: "Oops...",
+				text: "Something went wrong!",
+			});
 		}
 	};
 
