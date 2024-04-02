@@ -1,5 +1,6 @@
 import { PROJECTS } from "../../Constant/Constant";
 import ProjectCard from "../Project Card/ProjectCard";
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
 	return (
