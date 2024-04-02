@@ -1,10 +1,11 @@
 // My portfolio
 
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/Layout/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import Technologies from "./Components/Technologies/Technologies";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import ContactForm from "./Components/Contact Fom/ContactForm";
+import Footer from "./Components/Layout/Footer/Footer";
 
 const App = () => {
 	return (
@@ -18,6 +19,7 @@ const App = () => {
 				<Portfolio />
 				<ContactForm />
 			</div>
+			<Footer />
 		</>
 	);
 };
