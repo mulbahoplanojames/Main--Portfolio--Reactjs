@@ -177,7 +177,7 @@ const ContactForm = () => {
 
 								<p className='pt-2'>{result}</p>
 							</motion.div>
-							{/* <Button text={"Send "} /> */}
+							<Button text={"Send "} />
 							<p className='pt-4 text-red-500'>{result}</p>
 						</form>
 					</div>
