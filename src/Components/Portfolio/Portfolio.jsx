@@ -7,9 +7,14 @@ const Portfolio = () => {
 		<>
 			<div className='md:px-10 px-3 mb-28 md:text-center text-left '>
 				<h1 className='text-3xl uppercase font-bold text-2  pb-2'>Portfolio</h1>
-				<p className='text-lg font-bold pb-6'>
+				<motion.p
+					whileInView={{ opacity: 1, x: 0 }}
+					initial={{ opacity: 0, x: 50 }}
+					transition={{ duration: 1 }}
+					className='text-lg font-bold pb-6'
+				>
 					Each project is a distinct masterpiece.
-				</p>
+				</motion.p>
 
 				{PROJECTS.map((project) => (
 					<ProjectCard
